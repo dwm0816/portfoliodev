@@ -33,6 +33,9 @@ body{
     padding-bottom: 7px;
     color: white;
 }
+#logo{
+    float: left;
+}
 
 
 /* Core content */
@@ -72,12 +75,11 @@ body{
 #wai h2{
     margin-left: 1%
 }
+/*Unfortunately I couldn't get auto-margins to work (margin: auto/margin: 0 auto !important;) so I had to find another solution. */
 .logoContainer1, .logoContainer2, .logoContainer3{
     max-width: 600px;
     min-width: 20px;
     width: 33%;
-    margin-left: auto;
-    margin-right: auto;
     float: left;
     text-align: center;
 }
@@ -124,6 +126,16 @@ body{
         display: block;
         margin-bottom: 0;
         max-width: 849px;
+        width: 100%;
         margin: auto;
     }
 }
+@media screen and (max-width: 550px){
+        #logo{
+        width: 100%;
+    }
+}
+
+/* NOTES */
+/* All in all creating this was a good learning experience. */
+/* I will be working on this outside of schooling times to make it fit standards */
